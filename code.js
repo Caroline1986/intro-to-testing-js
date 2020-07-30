@@ -11,8 +11,18 @@ function sayHello(input) {
     }
 }
 function isFive(x) {
-    if (x == 5) {
+    if (x === 5) {
         return 5
+    } else {
+        return (typeof x === "boolean")
+    }
+}
+
+function isEven(x) {
+    if (x % 2 === 0) {
+        return true;
+    } else if (x == true || x == false) {
+        return false;
     } else {
         return (typeof x === "boolean")
     }

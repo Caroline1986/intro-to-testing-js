@@ -51,4 +51,34 @@ describe('isFive', function () {
     it('should return 5', function () {
         expect(isFive(5)).toBe(5)
     });
+    it('should be false if string', function () {
+        expect(isFive("5")).toBe(false)
+    });
+})
+
+describe('isEven', function () {
+    it('should return a boolean no matter input', function () {
+        expect(typeof isEven()).toBe('boolean');
+    });
+    it('should return true if 2',function () {
+        expect(isEven(2)).toBe(true)
+    })
+    it('should return true if -4', function () {
+        expect(isEven(-4)).toBe(true)
+    });
+    it('should return false if 3', function () {
+        expect(isEven(3)).toBe(false)
+    });
+    it('should return false if "banana"', function () {
+        expect(isEven("banana")).toBe(false)
+    });
+    it('should return true when "8"', function () {
+        expect(isEven("8")).toBe(true)
+    });
+    it('should return false if Infinity', function () {
+        expect(isEven(Infinity)).toBe(false)
+    });
+    it('should return false if input is true or false', function () {
+        expect(isEven(true || false)).toBe(false)
+    });
 })
