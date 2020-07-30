@@ -11,5 +11,9 @@ function sayHello(input) {
     }
 }
 function isFive(x) {
-    return (typeof x === "boolean")
+    if (x == 5) {
+        return 5
+    } else {
+        return (typeof x === "boolean")
+    }
 }
