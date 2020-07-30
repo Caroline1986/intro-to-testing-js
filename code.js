@@ -35,3 +35,11 @@ function isVowel(x) {
         return (typeof x === "boolean")
     }
 }
+
+function add(x,y) {
+    if (x == NaN || y == NaN) {
+        return NaN
+    } else {
+        return ((+x) + (+y));
+    }
+}
