@@ -27,3 +27,11 @@ function isEven(x) {
         return (typeof x === "boolean")
     }
 }
+
+function isVowel(x) {
+    if (['a','e','i','o','u',"A", "E", "I", "O", "U"].includes(x)) {
+        return true;
+    } else {
+        return (typeof x === "boolean")
+    }
+}
